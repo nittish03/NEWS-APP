@@ -115,7 +115,7 @@ const Register = () => {
           <p className="Ac have-account">
             Already have an account?
           </p>
-          <Link className="fp btn btn-outline btn-success login-btn ms-2" to="/login">
+          <Link className="fp btn btn-outline btn-success login-btn ms-2" to="/">
             Log in
           </Link>
           </div>

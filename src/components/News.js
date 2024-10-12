@@ -37,10 +37,10 @@ function News(props) {
   }
 
   return (
-    !loggedIn?
-    <>
-  <h1 style={{fontSize:"25vh",backgroundColor:"yellow"}} className="text-center" >LOG IN TO ACCESS</h1>
-  </>:
+  //   !loggedIn?
+  //   <>
+  // <h1 style={{fontSize:"25vh",backgroundColor:"yellow"}} className="text-center" >LOG IN TO ACCESS</h1>
+  // </>:
        <>
     <div className="news-container">
       <h1 className="news-heading">News Daily - Top {props.category} Headlines</h1>
