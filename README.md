@@ -1,1 +1,1 @@
-DEPLOYED LINK - https://gemini-aic.netlify.app/
+DEPLOYED LINK - https://newspp.netlify.app/
