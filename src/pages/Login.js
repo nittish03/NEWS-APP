@@ -29,7 +29,11 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/api/v1/auth/login", { email, password });
+      const loading = toast.loading("Logging in...")
+
+      await axios.post(`${process.env.REACT_APP_BASE_URL}/api/v1/auth/login`, { email, password });
+      toast.dismiss(loading);
+
       toast.success("Logged In Successfully");
       localStorage.setItem("authToken", true);
       navigate("/home");

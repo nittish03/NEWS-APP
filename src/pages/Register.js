@@ -26,9 +26,13 @@ const Register = () => {
 
   //register ctrl
   const handleSubmit = async (e) => {
+    const loading = toast.loading("Registerin...")
+
     e.preventDefault();
     try {
-      await axios.post("/api/v1/auth/register", { username, email, password });
+      await axios.post(`${process.env.REACT_APP_BASE_URL}/api/v1/auth/register`, { username, email, password });
+      toast.dismiss(loading);
+
       toast.success("User Register Successfully");
       navigate("/login");
     } catch (err) {
